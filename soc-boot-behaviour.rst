@@ -20,3 +20,11 @@ GUID Partition Table with firmware loaded from specific partitions: ``hyp``, ``r
 HiKey
 -----
 GUID Partition Table on eMMC. Native partitioning on UFS. Firmware loaded from specific partitions: ``xloader``, ``fastboot``, ``nvme``, ``fw_lpm3``, ``trustfirmware``.
+
+i.MX (AArch32)
+--------------
+These families (such as i.MX6, i.MX7) load firmware found at the one kilobyte offset of an SD or eMMC device.
+
+Allwinner sunxi
+---------------
+These families (both 32 and 64bit) load firmware found at the 8 kilobyte offset of an SD or eMMC device.

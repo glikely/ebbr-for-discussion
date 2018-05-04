@@ -12,8 +12,8 @@ Supposedly newer Raspberry Pis can handle GUID Partition Tables, but haven't fou
 
 https://github.com/raspberrypi/noobs/wiki/Standalone-partitioning-explained
 
-Dragonboard
------------
+Dragonboard (db410)
+-------------------
 
 GUID Partition Table with firmware loaded from specific partitions: ``hyp``, ``rpm``, ``sbl1``, ``tz``, ``aboot``, and ``cdt``.
 

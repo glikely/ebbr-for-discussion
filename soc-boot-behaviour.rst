@@ -12,10 +12,10 @@ Supposedly newer Raspberry Pis can handle GUID Partition Tables, but haven't fou
 
 https://github.com/raspberrypi/noobs/wiki/Standalone-partitioning-explained
 
-Dragonboard
------------
+Dragonboard 410c and 820c (or any derivatives, based on Snapdragon 410 or 820)
+------------------------------------------------------------------------------
 
-GUID Partition Table with firmware loaded from specific partitions: ``hyp``, ``rpm``, ``sbl1``, ``tz``, ``aboot``, and ``cdt``.
+GUID Partition Table with firmware loaded from specific partitions: ``hyp`` (512KB), ``rpm`` (512KB), ``sbl1`` (512KB on 410, 2MB on 820), ``tz`` (1MB on 410, 2MB on 820), ``aboot`` (1MB), and ``cdt`` (1KB). The size mentioned are the one typically used. On 820 based based it is possible to use eMMC or UFS. When using UFS the partition/LUNs scheme is slightly more complicated...
 
 HiKey
 -----

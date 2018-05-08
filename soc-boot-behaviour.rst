@@ -21,6 +21,11 @@ HiKey
 -----
 GUID Partition Table on eMMC. Native partitioning on UFS. Firmware loaded from specific partitions: ``xloader``, ``fastboot``, ``nvme``, ``fw_lpm3``, ``trustfirmware``.
 
+Poplar (96Boards)
+-----------------
+
+MBR partition table, boot ROM copies first 1MB from eMMC to DDR but data from 0x0 to 0x3000 can be arbitrary (forces MBR or undersize GPT partitioning). Uses a protective partition to protect SPL.
+
 i.MX (AArch32)
 --------------
 These families (such as i.MX6, i.MX7) load firmware found at the one kilobyte offset of an SD or eMMC device.

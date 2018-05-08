@@ -3,6 +3,8 @@ Embedded SoC Boot from eMMC/SD behaviour rollup
 
 This page is a rollup of various SoCs boot behaviour. Many SoCs can load firmware from an SD, eMMC, or USB storage device, but the behaviour may be hard coded in masked ROM and be incompatible with standard MBR or GUID partitioning, requiring special care if the storage is used to load both firmware and the target OS.
 
+Note: *The scope of this document is for systems that load firmware from some kind of primary boot media with a role similar the the primary SSD in a laptop (eMMC/UFS where this is fitted, SD for RPi, etc). The special partitioning of removable recovery media (where the boot ROM boots directly from removable/secondary media) is out of scope for EBBR since when the primary media is functional the firmware will be loaded as normal and becomes repsonsible for booting secondary media.*
+
 Raspberry Pi
 ------------
 
